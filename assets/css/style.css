@@ -56,6 +56,19 @@ header .navbar .navbar_logo{
     color: white;
     font-size: 30px;
     font-weight: 700;
+    position: relative;
+    padding: 0px !important;
+}
+
+header .navbar .navbar_logo::after{
+    content: "";
+    width: 7px;
+    height: 7px;
+    background-color: orangered;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 18%;
+    right: -12%;
 }
 
 header .navbar ul li .active{
@@ -66,6 +79,10 @@ header .navbar ul li .nav-link{
     color: rgba(232, 232, 232, 0.749) !important;
     padding: 18px 15px !important;
     transition: all .2s ease-in-out;
+}
+
+header .navbar ul li .active{
+    color: white !important;
 }
 
 header .navbar ul li:hover .nav-link{
@@ -878,6 +895,11 @@ header .website_header_tagline form .submit_btn:hover{
     padding: 10px;
     border: 1px solid rgba(145, 145, 145, 0.795);
     outline: none;
+    color: black;
+}
+
+.contact_input input::placeholder{
+    color: rgb(168, 168, 168);
 }
 
 .contact_input input:focus{
@@ -887,12 +909,16 @@ header .website_header_tagline form .submit_btn:hover{
 .user_massege textarea{
     width: 100%;
     background-color: rgb(240, 240, 240);
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 10px;
     border: 1px solid rgba(145, 145, 145, 0.795);
     height: 180px;
     margin-bottom: 20px;
     outline: none;
+}
+
+.user_massege textarea::placeholder{
+    color: rgb(168, 168, 168);
 }
 
 .user_massege textarea:focus{
