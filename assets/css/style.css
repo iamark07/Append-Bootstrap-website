@@ -57,7 +57,7 @@ header .navbar .navbar_logo{
     font-size: 30px;
     font-weight: 700;
     position: relative;
-    padding: 0px !important;
+    /* padding: 0px !important; */
 }
 
 header .navbar .navbar_logo::after{
@@ -67,7 +67,7 @@ header .navbar .navbar_logo::after{
     background-color: orangered;
     border-radius: 50%;
     position: absolute;
-    bottom: 18%;
+    bottom: 25%;
     right: -12%;
 }
 
@@ -1120,6 +1120,13 @@ footer ul li a:hover{
 @media screen and (min-width:340px) and (max-width:767px) {
     /* header nav section */
 
+    header .navbar .navbar_logo{
+        font-size: 25px;
+    }
+
+    header .navbar .navbar_logo::after{
+        bottom: 30%;
+    }
     header .navbar ul li:hover .nav-link{
         color: orangered !important;
     }
