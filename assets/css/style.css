@@ -71,10 +71,6 @@ header .navbar .navbar_logo::after{
     right: -12%;
 }
 
-header .navbar ul li .active{
-    color: white !important;
-}
-
 header .navbar ul li .nav-link{
     color: rgba(232, 232, 232, 0.749) !important;
     padding: 18px 15px !important;
